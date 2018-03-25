@@ -6,27 +6,20 @@ import { Home } from "./components/Home";
 
 class App extends React.Component {
 	render() {
-		var user = {
-			name: "Anna",
-			hobbies: ["Sports", "Dance"]
-		};
-
 		return(
-		<div className="container">
-			<p>This is a paragraph!</p>
-			<div className="row">
-				<div className=".col-xs-10 col-xs-offset-1">
-					<Header />
-				</div>
+			<div className="container">
+					<div className="row">
+						<div className=".col-xs-10 col-xs-offset-1">
+							<Header homeLink="Home"/>
+						</div>
+					</div>
+					<div className="row">
+						<div className=".col-xs-10 col-xs-offset-1">
+							<Home name={"Max"} Initialage={28}/>		
+						</div>
+					</div>
 			</div>
-			<div className="row">
-				<div className=".col-xs-10 col-xs-offset-1">
-					<Home name={"Max"} age={28} user={user}>
-						<p>This is a paragraph!</p>
-					</Home>
-				</div>
-			</div>
-	</div>);
+		);
 	}
 }
 
