@@ -47,8 +47,6 @@ export class Home extends React.Component {
 		console.log("Component will unmount");
 	}
 
-
-
 	onMakeOlder(){
 		this.setState({
 			age: this.state.age +3
